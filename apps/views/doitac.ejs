@@ -4,19 +4,21 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Đăng ký trở thành đối tác của XXX - nhanh và miễn phí</title>
+    <title>Đăng ký trở thành đối tác của
+        <%= data.TenApp %> - nhanh và miễn phí</title>
     <!-- META TAGS -->
-
-    <meta name="description" content="Đăng ký trở thành đối tác của XXX - nhanh và miễn phí">
+    <link rel="shortcut icon" href="<%= data.Favicon %>" type="image/png">
+    <meta name="description" content="<%= data.MoTa %>">
+    <meta type="keywords" content="<%= data.TuKhoa %>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href=" " sizes="any" type="image/svg+xml">
-    <meta property="og:title" content="Đăng ký trở thành đối tác của XXX - nhanh và miễn phí">
+    <meta property="og:title" content="Đăng ký trở thành đối tác của <%= data.TenApp %> - nhanh và miễn phí">
     <meta property="og:type" content="Website">
-    <meta property="og:description" content="Đăng ký trở thành đối tác của XXX - nhanh và miễn phí">
+    <meta property="og:description" content="Đăng ký trở thành đối tác của <%= data.TenApp %> - nhanh và miễn phí">
     <meta property="og:image" content="https://landing.loship.vn/wp-content/uploads/2020/11/tuyen_dung_11.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628">
-  
+
     <!-- LINK TAGS -->
 
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
@@ -36,7 +38,7 @@
     <link rel="stylesheet" href="/static/css/bootstrap-select-country.min.css" />
 
     <link rel="stylesheet" href="/static/css/timepicker.css">
-  
+
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/",
@@ -499,7 +501,7 @@
     <div class="container-fluid">
         <div class="row row-header">
             <a href="/">
-                <img src="/static/images/logo.png" id="logo" style="margin:10px 20px">
+                <img src="<%= data.Logo %>" id="logo" style="margin:10px 20px">
             </a>
         </div>
 
@@ -509,8 +511,10 @@
             <div class="row section-1" style="z-index:9;background-image: url('/static/images/doi-ngu-cuu-ho-oto.jpg');">
                 <div class="container">
                     <div class="content">
-                        <h1>Trở thành đối tác của XXX - nhanh và miễn phí</h1>
-                        <p>Dễ dàng trở thành đối tác của XXX - ứng dụng cứu hộ giao thông - quảng bá dịch vụ của bạn đến với mọi người.</p>
+                        <h1>Trở thành đối tác của
+                            <%= data.TenApp %> - nhanh và miễn phí</h1>
+                        <p>Dễ dàng trở thành đối tác của
+                            <%= data.TenApp %> - ứng dụng cứu hộ giao thông - quảng bá dịch vụ của bạn đến với mọi người.</p>
                     </div>
                 </div>
             </div>
@@ -745,7 +749,7 @@
                                                 <div id="captcha"></div>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="col-sm-12 mt-5">
                                             <div class="form-group">
                                                 <label>Lưu ý khi đặt mật khẩu:</label>
@@ -783,7 +787,9 @@
         <!-- SECTION 2 -->
         <div class="row section-2 ">
             <div class="container ">
-                <h2>3 lợi ích khi tham gia XXX</h2>
+                <h2>3 lợi ích khi tham gia
+                    <%= data.TenApp %>
+                </h2>
                 <div class="row ">
                     <div class="col-md-4 ">
                         <img src="/static/images/col-1.svg " alt="Công việc tự do, văn minh và hiện đại ">
@@ -821,10 +827,12 @@
         <div class="row section-3 " style="z-index:9;background-image: url('/static/images/bg-dt.jpg'); ">
             <!-- <div class="dark-bg "></div> -->
             <div class="container ">
-                <h2> Gia nhập XXX ngay hôm nay!</h2>
-                <p class="des ">Gia nhập đội ngũ XXX để làm việc trong môi trường tự do, văn minh và chuyên nghiệp.
+                <h2> Gia nhập
+                    <%= data.TenApp %> ngay hôm nay!</h2>
+                <p class="des ">Gia nhập đội ngũ
+                    <%= data.TenApp %> để làm việc trong môi trường tự do, văn minh và chuyên nghiệp.
                 </p>
-                <a href="#" class="btn-loship btn-beome-driver js-btn-become-driver ">Trở thành đối tác của XXX</a>
+                <a href="#" class="btn-loship btn-beome-driver js-btn-become-driver ">Trở thành đối tác của <%= data.TenApp %></a>
             </div>
         </div>
         <!-- /SECTION 3 -->
@@ -837,14 +845,16 @@
                 <div class="container content">
                     <div class="row">
                         <div class="col-sm-12 col-xs-12 col-md-4 mr-5">
-                            <img style="margin-bottom: 20px;" class="img-responsive" src="/static/images/logo.png">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quod blanditiis quos sunt iste! Unde natus rem dolor, fugiat repellat aperiam laborum nam deserunt eveniet ea tenetur vel delectus nemo.</p>
+                            <img style="margin-bottom: 20px;" class="img-responsive" src="<%= data.Logo %>">
+                            <p>
+                                <%= data.MoTa %>
+                            </p>
                             <ul class="row">
                                 <li class="col-sm-6 px-2 py-0">
-                                    <a class="app-store btn btn-dark" href="#"><img src="/static/images/app-store.png" alt="store" height="35px"></a>
+                                    <a class="app-store btn btn-dark" href="<%= data.APK %>"><img src="/static/images/app-store.png" alt="store" height="35px"></a>
                                 </li>
                                 <li class="col-sm-6 px-2 py-0">
-                                    <a class="play-store btn btn-primary" href="#"><img src="/static/images/play-store.png" alt="store" height="35px"></a>
+                                    <a class="play-store btn btn-primary" href="<%= data.IOS %>"><img src="/static/images/play-store.png" alt="store" height="35px"></a>
                                 </li>
                             </ul>
                         </div>
@@ -874,15 +884,8 @@
                                 <li>
                                     <div class="contact-info d-flex">
                                         <div class="info-content media-body">
-                                            <p class="text"><i class="lni lni-phone"></i>&nbsp;&nbsp;+809272561823</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="contact-info d-flex">
-                                        <div class="info-content media-body">
-                                            <p class="text"><a href="#"><i
-                                                        class="lni lni-envelope"></i>&nbsp;&nbsp;info@appland.com</a>
+                                            <p class="text"><i class="lni lni-phone"></i>&nbsp;&nbsp;
+                                                <%= data.Hotline %>
                                             </p>
                                         </div>
                                     </div>
@@ -891,14 +894,24 @@
                                     <div class="contact-info d-flex">
                                         <div class="info-content media-body">
                                             <p class="text"><a href="#"><i
-                                                        class="lni lni-world"></i>&nbsp;&nbsp;www.yourweb.com</a></p>
+                                                        class="lni lni-envelope"></i>&nbsp;&nbsp;<%= data.Email %></a>
+                                            </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="contact-info d-flex">
                                         <div class="info-content media-body">
-                                            <p class="text"><i class="lni lni-map"></i>&nbsp;&nbsp;123 Stree New York City , United States Of America 750.
+                                            <p class="text"><a href="#"><i
+                                                        class="lni lni-world"></i>&nbsp;&nbsp;<%= data.Website %></a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-info d-flex">
+                                        <div class="info-content media-body">
+                                            <p class="text"><i class="lni lni-map"></i>&nbsp;&nbsp;
+                                                <%= data.TruSoChinh %>
                                             </p>
                                         </div>
                                     </div>
@@ -1023,11 +1036,11 @@
                             $('#longitude').val(data.lng);
                         }
                     });
-                    $(window).keydown(function(event){
-                      if(event.keyCode == 13) {
-                        event.preventDefault();
-                        return false;
-                      }
+                    $(window).keydown(function(event) {
+                        if (event.keyCode == 13) {
+                            event.preventDefault();
+                            return false;
+                        }
                     });
                 });
             </script>
@@ -1039,37 +1052,40 @@
                     $("#giodongcua").timepicker();
                 });
             </script>
-          
+
             <script type="text/javascript">
-                  var allowSubmit = false;
-                  var allowEnter  = false;
-                  function capcha_filled() {
-                      allowSubmit = true;
-                  }
-                  function capcha_expired() {
-                      allowSubmit = false;
-                  }
-                  $('#finish').click(function(){
-                      allowEnter = true;
-                  });
-                  $('#myForm').on('submit', function(e) {
-                      if(allowSubmit && allowEnter) return true;
-                      e.preventDefault();
-                      alert('Bạn chưa xác minh Captcha!');
-                  });
-                  
-                  var onloadCallback = function() {
+                var allowSubmit = false;
+                var allowEnter = false;
+
+                function capcha_filled() {
+                    allowSubmit = true;
+                }
+
+                function capcha_expired() {
+                    allowSubmit = false;
+                }
+                $('#finish').click(function() {
+                    allowEnter = true;
+                });
+                $('#myForm').on('submit', function(e) {
+                    if (allowSubmit && allowEnter) return true;
+                    e.preventDefault();
+                    alert('Bạn chưa xác minh Captcha!');
+                });
+
+                var onloadCallback = function() {
                     // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
                     // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
                     grecaptcha.render('captcha', {
-                      'sitekey' : '6LeZU8EZAAAAAJ0D0LhPx4053iK6g6wjjgFoDuAK',
-                      'theme' : 'light',
-                      'callback': capcha_filled,
-                      'expired-callback': capcha_expired
+                        'sitekey': '6LeZU8EZAAAAAJ0D0LhPx4053iK6g6wjjgFoDuAK',
+                        'theme': 'light',
+                        'callback': capcha_filled,
+                        'expired-callback': capcha_expired
                     });
-                  };
+                };
             </script>
-          <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer> </script>
+            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+            </script>
         </div>
     </div>
     <%- include('botchat'); %>

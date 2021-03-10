@@ -5,11 +5,14 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Cứu Hộ Xe Cơ Giới, Cứu Hộ Giao Thông Tại Khu Vực Đà Nẵng</title>
-    <meta name="description" content="">
+    <title>
+        <%= data.TenWebsite %>
+    </title>
+    <meta name="description" content="<%= data.MoTa %>">
+    <meta type="keywords" content="<%= data.TuKhoa %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="<%= data.Favicon %>" type="image/png">
 
     <link rel="stylesheet" href="/static/css/animate.css">
 
@@ -59,7 +62,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="/">
-                                <img src="/static/images/logo.png" alt="Logo">
+                                <img src="<%= data.Logo %>" alt="Logo">
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toggler-icon"></span>
@@ -105,14 +108,16 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="header-hero-content">
                             <h3 class="header-title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeInLeftBig;">
-                                <span>Xe bị hư</span> cứ để XXX lo.</h3>
+                                <span>Xe bị hư</span> cứ để
+                                <%= data.TenApp%> lo.</h3>
                             <p class="text wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.6s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.6s; animation-name: fadeInLeftBig;">
-                                XXX là 1 hệ thống với nhiều dịch vụ sửa chữa, cứu hộ giao thông uy tín và chất lượng trên khu vực thành phố Đà Nẵng, sẵn sàng hỗ trợ người sử dụng phương tiện xe cơ giới mọi lúc, mọi nơi, 24/24 kể cả ngày lễ và chủ nhật.</p>
+                                <%= data.MoTa %>
+                            </p>
                             <ul class="d-flex">
                                 <li><a href="#download" class="main-btn wow fadeInLeftBig page-scroll" data-wow-duration="1.3s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.8s; animation-name: fadeInLeftBig;">Tải
                     App ngay</a></li>
                                 <li>
-                                    <a href="https://www.youtube.com/watch?v=Yi6Y1gSIyyo" class="header-video video-popup wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="1.2s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 1.2s; animation-name: fadeInLeftBig;"><i class="lni lni-play"></i></a>
+                                    <a href="<%= data.Video %>" class="header-video video-popup wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="1.2s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 1.2s; animation-name: fadeInLeftBig;"><i class="lni lni-play"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -140,8 +145,10 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="section-title text-center pb-25">
-                        <h3 class="title">Tại sao bạn nên sử dụng XXX ?</h3>
-                        <p class="text">Với sự phổ biến của phương tiện xe cơ giới, số lượng xe lưu thông nhiều, tỷ lệ xảy ra hỏng hóc như thủng lốp, sự cố ắc quy, chết máy,… xảy ra thường xuyên, và đây là lí do bạn nên sử dụng XXX.</p>
+                        <h3 class="title">Tại sao bạn nên sử dụng
+                            <%= data.TenApp%> ?</h3>
+                        <p class="text">Với sự phổ biến của phương tiện xe cơ giới, số lượng xe lưu thông nhiều, tỷ lệ xảy ra hỏng hóc như thủng lốp, sự cố ắc quy, chết máy,… xảy ra thường xuyên, và đây là lí do bạn nên sử dụng
+                            <%= data.TenApp%>.</p>
                     </div>
                 </div>
             </div>
@@ -153,7 +160,8 @@
                         </div>
                         <div class="services-content">
                             <h4 class="services-title"><a href="#">Đa Dạng</a></h4>
-                            <p class="text">XXX kết nối các Trung tâm cứu hộ, các tiệm sửa xe, garage xe và người cần cứu hộ lại với nhau, cho nên dịch vụ của chúng tôi rất đa dạng.</p>
+                            <p class="text">
+                                <%= data.TenApp%> kết nối các Trung tâm cứu hộ, các tiệm sửa xe, garage xe và người cần cứu hộ lại với nhau, cho nên dịch vụ của chúng tôi rất đa dạng.</p>
                         </div>
                     </div>
                 </div>
@@ -164,7 +172,8 @@
                         </div>
                         <div class="services-content">
                             <h4 class="services-title"><a href="#">Dễ Sử Dụng</a></h4>
-                            <p class="text">Chỉ cần cài đặt App XXX trên các thiết bị di động của mình và lựa chọn dịch vụ cần sử dụng.
+                            <p class="text">Chỉ cần cài đặt App
+                                <%= data.TenApp%> trên các thiết bị di động của mình và lựa chọn dịch vụ cần sử dụng.
                             </p>
                         </div>
                     </div>
@@ -187,7 +196,8 @@
                         </div>
                         <div class="services-content">
                             <h4 class="services-title"><a href="#">Tiện Lợi</a></h4>
-                            <p class="text">Ngồi tại nhà cũng có thể sửa xe, mất chìa khóa, hết xăng hay thậm chí bạn lười tìm tiệm sửa xe, XXX cũng có thể giúp bạn tìm kiếm.</p>
+                            <p class="text">Ngồi tại nhà cũng có thể sửa xe, mất chìa khóa, hết xăng hay thậm chí bạn lười tìm tiệm sửa xe,
+                                <%= data.TenApp%> cũng có thể giúp bạn tìm kiếm.</p>
                         </div>
                     </div>
                 </div>
@@ -223,7 +233,8 @@
                             </div>
                             <div class="features-content media-body">
                                 <h4 class="features-title">Cứu hộ Ôtô</h4>
-                                <p class="text">Xe của bạn không thể di chuyển được vì bất cứ lý do nào đó? Hãy gửi yêu cầu cứu hộ đến các trung tâm dịch vụ gần bạn nhất mà XXX kết nối để nhận được sự giúp đỡ.</p>
+                                <p class="text">Xe của bạn không thể di chuyển được vì bất cứ lý do nào đó? Hãy gửi yêu cầu cứu hộ đến các trung tâm dịch vụ gần bạn nhất mà
+                                    <%= data.TenApp%> kết nối để nhận được sự giúp đỡ.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 single-features features-color d-sm-flex mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.6s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.6s; animation-name: fadeInUpBig;">
@@ -280,10 +291,11 @@
                 <div class="col-lg-6">
                     <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.5s; animation-name: fadeInRightBig;">
                         <div class="section-title">
-                            <h3 class="title">Cài đặt XXX bạn sẽ có tất cả những gì bạn cần.</h3>
+                            <h3 class="title">Cài đặt
+                                <%= data.TenApp%> bạn sẽ có tất cả những gì bạn cần.</h3>
                             <p class="text">Xung quanh nơi bạn đứng có bao nhiêu tiệm sửa xe, garage oto hay trung tâm cứu hộ xe? <br> Trung tâm cứu hộ đó có nững dịch vụ gì, giá cả ra sao? Chọn trung tâm nào cho phù hợp? Làm thế nào để liên hệ với họ?
                                 <br> Trung tâm cứu hộ, tiệm sửa xe hay Garage Otô đó chất lượng dịch vụ tốt không? Mọi người đánh giá như thế nào?
-                                <br><br> <strong>Yên tâm, XXX sẽ cho bạn biết tất cả!</strong>
+                                <br><br> <strong>Yên tâm, <%= data.TenApp%> sẽ cho bạn biết tất cả!</strong>
                             </p>
                         </div>
                         <a href="#download" class="main-btn page-scroll">Cài đặt ngay</a>
@@ -643,10 +655,10 @@
                         <p class="text">Đây sẽ công cụ vô cùng hữu ích mà bạn sẽ cần mỗi ngày, bạn sẽ tiết kiệm được rất nhiều thời gian & công sức hơn khi sử dụng ứng dụng của chúng tôi.</p>
                         <ul>
                             <li>
-                                <a class="app-store" href="#"><img src="/static/images/app-store.png" alt="store"></a>
+                                <a class="app-store" href="<%= data.APK%> "><img src="/static/images/app-store.png" alt="store"></a>
                             </li>
                             <li>
-                                <a class="play-store" href="#"><img src="/static/images/play-store.png" alt="store"></a>
+                                <a class="play-store" href="<%= data.IOS%> "><img src="/static/images/play-store.png" alt="store"></a>
                             </li>
                         </ul>
                     </div>
@@ -685,11 +697,13 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
                             <a class="logo" href="#">
-                                <img src="/static/images/logo.png" alt="Logo">
+                                <img src="<%= data.Logo%> " alt="Logo">
                             </a>
-                            <p class="text">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                            <p class="text">
+                                <%= data.MoTa%>
+                            </p>
                             <ul class="social">
-                                <li><a href="#"><i class="lni lni-facebook"></i></a></li>
+                                <li><a href="<%= data.Fanpage%>"><i class="lni lni-facebook"></i></a></li>
                                 <li><a href="#"><i class="lni lni-twitter"></i></a></li>
                                 <li><a href="#"><i class="lni lni-instagram"></i></a></li>
                                 <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
@@ -733,14 +747,16 @@
                                 <li>
                                     <div class="contact-info d-flex">
                                         <div class="info-content media-body">
-                                            <p class="text"><i class="lni lni-phone"></i> +809272561823</p>
+                                            <p class="text"><i class="lni lni-phone"></i>
+                                                <%= data.Hotline%>
+                                            </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="contact-info d-flex">
                                         <div class="info-content media-body">
-                                            <p class="text"><a href="#"><i class="lni lni-envelope"></i> info@appland.com</a></p>
+                                            <p class="text"><a href="#"><i class="lni lni-envelope"></i> <%= data.Email%></a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -748,14 +764,15 @@
                                     <div class="contact-info d-flex">
                                         <div class="info-content media-body">
                                             <p class="text"><a href="#"><i class="lni lni-world"></i>
-                          www.yourweb.com</a></p>
+                                                <%= data.Website%></a></p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="contact-info d-flex">
                                         <div class="info-content media-body">
-                                            <p class="text"><i class="lni lni-map"></i> 123 Stree New York City , United States Of America 750.
+                                            <p class="text"><i class="lni lni-map"></i>
+                                                <%= data.TruSoChinh%>
                                             </p>
                                         </div>
                                     </div>
@@ -772,7 +789,11 @@
                     <div class="col-lg-12">
                         <div class="copyright d-sm-flex justify-content-between">
                             <div class="copyright-text text-center">
-                                <p class="text">©Copyright by <a rel="nofollow" href="#">Hiếu Hằng Team</a></p>
+                                <p class="text">©Copyright by
+                                    <a rel="nofollow" href="#">
+                                        <%= data.BanQuyen%>
+                                    </a>
+                                </p>
                             </div>
                             <div class="copyright-privacy text-center">
                                 <a href="#"></a>
