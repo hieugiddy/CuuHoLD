@@ -1,0 +1,976 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+::-webkit-input-placeholder {
+    color: #9b9b9b
+}
+
+::-moz-placeholder {
+    color: #9b9b9b
+}
+
+:-ms-input-placeholder {
+    color: #9b9b9b
+}
+
+:-moz-placeholder {
+    color: #9b9b9b
+}
+
+a:hover,
+a:focus {
+    text-decoration: none
+}
+
+.show-on-mobile {
+    display: none
+}
+
+.section-content iframe {
+    width: 100%;
+    max-width: 768px;
+    height: 432px
+}
+
+body {
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif, Arial, sans-serif;
+    background: #fff
+}
+
+img {
+    max-width: 100%;
+    backface-visibility: visible;
+    transform: translate3d(0, 0, 0)
+}
+
+.txt-center {
+    text-align: center
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #424242
+}
+
+.container {
+    max-width: 1180px
+}
+
+#logo {
+    height: 40px;
+    margin-left: 25px
+}
+
+.btn-loship {
+    background: #e0132b;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+    border: transparent
+}
+
+.btn-loship:focus {
+    outline: none
+}
+
+.btn-loship:hover {
+    color: #fff
+}
+
+.btn-dang-ky {
+    width: 100%
+}
+
+.btn-dang-ky.disabled {
+    background: #e8e8e8;
+    color: #424242
+}
+
+.btn-beome-driver {
+    padding: 14px 49px;
+    display: inline-block
+}
+
+.wrap-select {
+    position: relative
+}
+
+.wrap-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none
+}
+
+.wrap-select .triangle-down {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.loship-form {
+    max-width: 630px;
+    padding: 25px 0;
+    position: absolute;
+    top: 38px;
+    right: 30px;
+    background: transparent
+}
+
+@media(max-width:767px) {
+    .loship-form {
+        right: 0;
+    }
+}
+
+.loship-form h3 {
+    font-size: 32px;
+    color: #e0132b;
+    margin: 0 0 15px 0
+}
+
+.loship-form .des {
+    margin-top: 0
+}
+
+.loship-form .form-group {
+    margin-bottom: 15px
+}
+
+.loship-form .form-group input,
+.loship-form .form-group select {
+    border-radius: 5px;
+    border: 1px solid #979797;
+    padding: 0 15px
+}
+
+.loship-form .wrap-status-form {
+    display: none;
+    margin-top: 15px
+}
+
+.loship-form .wrap-status-form .alert {
+    display: none
+}
+
+.wrap-section-1 {
+    position: relative
+}
+
+.section-1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 750px
+}
+
+.section-1 .content {
+    color: #fff;
+    position: absolute;
+    bottom: 150px;
+    max-width: 450px;
+    left: 100px;
+}
+
+.section-1 .content h1 {
+    font-size: 49px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.section-1 .content p {
+    font-size: 18px
+}
+
+.section-2 {
+    padding-bottom: 90px
+}
+
+.section-2 h2 {
+    color: #e0132b;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px
+}
+
+.section-2 h3 {
+    color: #e0132b;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 15px;
+    min-height: 74px
+}
+
+.section-2 .des {
+    font-size: 20px
+}
+
+.section-2 .col-md-4 img {
+    display: block;
+    margin: 0 auto;
+    min-height: 114px
+}
+
+.section-2 .col-md-4 ul {
+    padding-left: 17px
+}
+
+.section-3 {
+    text-align: center;
+    padding: 70px 0;
+    position: relative;
+    background-size: cover;
+    background-position: center
+}
+
+.section-3 h2 {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
+    line-height: 1.2em
+}
+
+.section-3 .des {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 35px
+}
+
+.section-3 .dark-bg {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5
+}
+
+.section-3 .container {
+    position: relative;
+    z-index: 1
+}
+
+.section-4 {
+    padding: 70px 0
+}
+
+.section-4 h2 {
+    color: #e0132b;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
+    line-height: 1.2em
+}
+
+.section-4 .des {
+    font-size: 20px
+}
+
+.section-4 .address {
+    font-size: 20px
+}
+
+.section-4 h4 {
+    font-size: 24px
+}
+
+.section-5 {
+    padding: 0 0 70px 0
+}
+
+.section-5 h2 {
+    color: #e0132b;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
+    line-height: 1.2em
+}
+
+.section-5 .des {
+    font-size: 20px
+}
+
+.section-6 h2 {
+    color: #e0132b;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0
+}
+
+.section-6 .panel-title {
+    font-size: 30px
+}
+
+.section-6 .panel-body {
+    font-size: 18px
+}
+
+.heading-tbl-requirement {
+    margin-bottom: 45px
+}
+
+.list-step {
+    list-style: none;
+    display: inline-flex;
+    width: 100%;
+    margin: 50px 0;
+    padding: 0
+}
+
+.list-step li {
+    width: 100%;
+    padding: 30px;
+    position: relative
+}
+
+.list-step li:not(:last-child):after {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #424242;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    transform: translateY(-50%)
+}
+
+.list-step li:last-child .step-item .text {
+    width: 157px
+}
+
+.step-item {
+    border-radius: 50%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    width: 226px;
+    height: 226px;
+    background: #e0132b;
+    position: relative;
+    text-align: center
+}
+
+.step-item .text {
+    font-size: 32px;
+    width: 137px;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.tbl-required-info {
+    font-size: 24px
+}
+
+.tbl-required-info .heading {
+    display: inline-block;
+    width: 100%;
+    color: #fff
+}
+
+.tbl-required-info .heading div {
+    float: left;
+    text-align: center;
+    padding: 20px 0
+}
+
+.tbl-required-info .heading div.stt {
+    width: 10%
+}
+
+.tbl-required-info .heading div.type {
+    width: 35%
+}
+
+.tbl-required-info .heading div.requirement {
+    width: 55%
+}
+
+.tbl-required-info .heading div.note {
+    width: 20%
+}
+
+.tbl-required-info .heading div:nth-child(2n-1) {
+    background: #e0132b
+}
+
+.tbl-required-info .heading div:nth-child(2n) {
+    color: #424242;
+    background: #e8e8e8
+}
+
+.tbl-required-info .content-table {
+    display: inline-block;
+    width: 100%
+}
+
+.tbl-required-info .content-table .left-tbl {
+    width: 100%;
+    float: left
+}
+
+.tbl-required-info .content-table .left-tbl .list-line {
+    margin: 0;
+    padding: 0
+}
+
+.tbl-required-info .content-table .left-tbl .list-line .line-item:last-child {
+    border-bottom: none
+}
+
+.tbl-required-info .content-table .note {
+    width: 20%;
+    float: left;
+    padding: 100px 15px
+}
+
+.line-item {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid #9b9b9b
+}
+
+.line-item div {
+    float: left;
+    padding: 20px 5px
+}
+
+.line-item div.stt {
+    width: 10%;
+    text-align: center
+}
+
+.line-item div.type {
+    width: 35%
+}
+
+.line-item div.requirement {
+    width: 55%
+}
+
+.list-q-and-a .panel {
+    border: none;
+    margin-bottom: 15px;
+    box-shadow: none;
+    background: #f4f4f4;
+    border-radius: 15px;
+    padding: 15px
+}
+
+.list-q-and-a .panel .panel-heading {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding-right: 45px
+}
+
+.list-q-and-a .panel .panel-heading .glyphicon {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
+
+.list-q-and-a .panel .panel-heading .collapsed .glyphicon {
+    transform: rotate(180deg)
+}
+
+.list-q-and-a .panel .panel-collapse {
+    border-top: 1px solid #9b9b9b
+}
+
+.list-q-and-a .panel .panel-collapse .panel-body {
+    border-top: none
+}
+
+.wrap-step-carousel {
+    margin: 45px 0;
+    padding: 0 40px
+}
+
+.wrap-step-carousel .list-img {
+    width: 260px;
+    height: 518px;
+    float: left;
+    position: relative;
+    margin-right: 90px
+}
+
+.wrap-step-carousel .list-img img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-50%)
+}
+
+.wrap-step-carousel .list-img img.active {
+    opacity: 1
+}
+
+.wrap-step-carousel .list-step-info {
+    width: 60%;
+    margin: auto;
+}
+
+.wrap-step-carousel .list-step-info ul {
+    list-style: none
+}
+
+.wrap-step-carousel .list-step-info .step-item-carousel {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    position: relative;
+    padding: 0 0 10px 45px
+}
+
+.wrap-step-carousel .list-step-info .step-item-carousel:before {
+    width: 13px;
+    height: 92px;
+    background: url(../images/arrowdown.png) no-repeat center/cover;
+    bottom: -2px;
+    left: 11px;
+    content: "";
+    display: block;
+    position: absolute
+}
+
+.wrap-step-carousel .list-step-info .step-item-carousel:after {
+    content: attr(data-step);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #e0132b;
+    font-weight: 500;
+    font-size: 1em;
+    color: #e0132b;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer
+}
+
+.wrap-step-carousel .list-step-info .step-item-carousel:last-child:before {
+    background: none
+}
+
+.wrap-step-carousel .list-step-info .step-item-carousel.active:after {
+    color: #fff;
+    background-color: #e0132b
+}
+
+.wrap-step-carousel .list-step-info .step-item-carousel.active h4 {
+    color: #e0132b
+}
+
+.wrap-step-carousel .list-step-info .step-item-carousel h4 {
+    cursor: pointer;
+    font-size: 24px
+}
+
+.wrap-step-carousel .list-step-info .step-item-carousel p {
+    font-size: 24px
+}
+
+.wrap-step-carousel .list-step-info .step-item-carousel .glyphicon {
+    display: none
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1240px) {
+    .section-1 .content {
+        bottom: 120px;
+        left: 30px
+    }
+    .loship-form {
+        right: 30px
+    }
+    .step-item {
+        width: 175px;
+        height: 175px
+    }
+    .step-item .text {
+        font-size: 27px
+    }
+    .wrap-step-carousel .list-img {
+        margin-right: 0
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .step-item {
+        width: 120px;
+        height: 120px;
+        font-size: 16px
+    }
+    .step-item .text {
+        width: 100px
+    }
+    .list-step li:last-child .step-item .text {
+        width: 100px;
+        font-size: 18px
+    }
+    .list-step li .step-item .text {
+        font-size: 18px
+    }
+    .wrap-step-carousel .list-img {
+        margin-right: 0
+    }
+    .wrap-step-carousel .list-img {
+        width: 250px
+    }
+    .loship-form {
+        right: 10px
+    }
+    .section-1 .content {
+        bottom: 147px;
+        left: 10px;
+        max-width: 300px
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .loship-form {
+        right: inherit;
+        top: inherit;
+        position: relative;
+        max-width: 100%
+    }
+    .section-1 {
+        height: 330px
+    }
+    .section-1 .content {
+        bottom: inherit;
+        left: 10px;
+        top: 50px;
+        max-width: 300px
+    }
+    .section-1 .content h1 {
+        font-size: 35px
+    }
+    .section-2 h2,
+    .section-3 h2,
+    .section-4 h2,
+    .section-5 h2,
+    .section-6 h2 {
+        font-size: 28px;
+        margin-bottom: 15px
+    }
+    .section-2 .des {
+        font-size: 18px
+    }
+    .section-2 h3 {
+        font-size: 18px;
+        min-height: inherit
+    }
+    .list-step {
+        display: block
+    }
+    .list-step li {
+        width: 33%;
+        float: left
+    }
+    .list-step li:not(:last-child):after {
+        top: 50%;
+        right: -13px;
+        transform: rotate(0deg) translateY(-50%);
+        left: inherit
+    }
+    .list-step li:last-child .step-item .text {
+        width: 106px
+    }
+    .step-item {
+        width: 150px;
+        height: 150px
+    }
+    .step-item .text {
+        font-size: 18px;
+        width: 92px
+    }
+    .heading-tbl-requirement {
+        margin-bottom: 15px
+    }
+    .line-item {
+        font-size: 18px
+    }
+    .tbl-required-info .heading {
+        display: none
+    }
+    .tbl-required-info .content-table .left-tbl,
+    .tbl-required-info .content-table .note {
+        float: inherit;
+        width: 100%;
+        border-right: none;
+        padding: 0
+    }
+    .section-5 {
+        padding: 0
+    }
+    .wrap-step-carousel .list-step-info {
+        float: inherit;
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center
+    }
+    .wrap-step-carousel .list-step-info ul {
+        padding: 0;
+        display: inline-block
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel {
+        float: left;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin-right: 30px
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel:before {
+        background: none
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel:last-child {
+        margin-right: 0
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel h4,
+    .wrap-step-carousel .list-step-info .step-item-carousel p {
+        display: none
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel .glyphicon {
+        display: block;
+        position: absolute;
+        right: -22px;
+        top: 7px
+    }
+    .wrap-step-carousel .list-img {
+        width: 100%
+    }
+    .section-6 .panel-title {
+        font-size: 20px
+    }
+    .section-6 .panel-body {
+        font-size: 16px
+    }
+    .list-q-and-a .panel .panel-heading {
+        padding-right: 35px
+    }
+    .show-on-mobile {
+        display: block
+    }
+    .list-step-m {
+        width: 100%
+    }
+    .list-step-m li {
+        display: none
+    }
+    .list-step-m li.active {
+        display: block
+    }
+    .list-step-m li p {
+        margin-bottom: 0
+    }
+    .section-6 {
+        margin-bottom: 20px
+    }
+}
+
+footer {
+    background-color: #e8e8e8
+}
+
+@media only screen and (min-width: 100px) and (max-width: 479px) {
+    .loship-form {
+        right: inherit;
+        top: inherit;
+        position: relative;
+        max-width: 100%
+    }
+    .section-1 {
+        height: 270px
+    }
+    .section-1 .content {
+        bottom: inherit;
+        left: 10px;
+        top: 10px;
+        max-width: 300px
+    }
+    .section-1 .content h1 {
+        font-size: 35px;
+        margin: 15px 0 15px !important;
+    }
+    .section-2 h2,
+    .section-3 h2,
+    .section-4 h2,
+    .section-5 h2,
+    .section-6 h2 {
+        font-size: 28px;
+        margin-bottom: 15px
+    }
+    .section-2 .des {
+        font-size: 18px
+    }
+    .section-2 h3 {
+        font-size: 18px;
+        min-height: inherit
+    }
+    .list-step {
+        display: block
+    }
+    .list-step li {
+        width: 33%;
+        float: left;
+        padding: 5px
+    }
+    .list-step li:not(:last-child):after {
+        top: 50%;
+        right: -13px;
+        transform: rotate(0deg) translateY(-50%);
+        left: inherit;
+        display: none
+    }
+    .list-step li:nth-child(2):after {
+        display: none
+    }
+    .list-step li:last-child .step-item .text {
+        width: 70px
+    }
+    .step-item {
+        width: 88px;
+        height: 88px
+    }
+    .step-item .text {
+        width: 64px;
+        font-size: 13px
+    }
+    .heading-tbl-requirement {
+        margin-bottom: 15px
+    }
+    .line-item {
+        font-size: 18px
+    }
+    .tbl-required-info .heading {
+        display: none
+    }
+    .tbl-required-info .content-table .left-tbl,
+    .tbl-required-info .content-table .note {
+        float: inherit;
+        width: 100%;
+        border-right: none;
+        padding: 0
+    }
+    .section-5 {
+        padding: 0
+    }
+    .wrap-step-carousel .list-step-info {
+        float: inherit;
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center
+    }
+    .wrap-step-carousel .list-step-info ul {
+        padding: 0;
+        display: inline-block
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel {
+        float: left;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin-right: 30px
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel:before {
+        background: none
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel:last-child {
+        margin-right: 0
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel h4,
+    .wrap-step-carousel .list-step-info .step-item-carousel p {
+        display: none
+    }
+    .wrap-step-carousel .list-step-info .step-item-carousel .glyphicon {
+        display: block;
+        position: absolute;
+        right: -22px;
+        top: 7px
+    }
+    .wrap-step-carousel .list-img {
+        width: 100%
+    }
+    .section-6 .panel-title {
+        font-size: 20px
+    }
+    .section-6 .panel-body {
+        font-size: 16px
+    }
+    .list-q-and-a .panel .panel-heading {
+        padding-right: 35px
+    }
+    .show-on-mobile {
+        display: block
+    }
+    .list-step-m li {
+        display: none
+    }
+    .list-step-m li.active {
+        display: block
+    }
+    .list-step-m li p {
+        margin-bottom: 0
+    }
+    .section-6 {
+        margin-bottom: 20px
+    }
+}
+
+.btn-dark {
+    background: #212529 !important;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #777;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
