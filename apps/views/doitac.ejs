@@ -530,7 +530,6 @@
                                 <ul>
                                     <li><a href="#location" data-toggle="tab">Cá nhân</a></li>
                                     <li><a href="#type" data-toggle="tab">Doanh nghiệp</a></li>
-                                    <li><a href="#facilities" data-toggle="tab">Dịch vụ</a></li>
                                     <li><a href="#description" data-toggle="tab">Tài khoản</a></li>
                                 </ul>
                             </div>
@@ -674,56 +673,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="facilities">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Hotline hỗ trợ khách hàng</label>
-                                            <input type="text" class="form-control" name="hotline" id="hotline" placeholder="Nhập số điện thoại tại đây... " required/>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Zalo</label>
-                                            <input type="text" class="form-control" name="zalo" id="zalo" placeholder="Nhập số điện thoại đăng ký zalo... " />
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Phạm vi hoạt động</label>
-                                            <input type="text" class="form-control" name="phamvihoatdong" id="phamvihoatdong" placeholder="VD: Cứu hộ khu vực Hải Châu" required/>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Giờ hoạt động</label>
-                                            <input id="giohoatdong" name="giohoatdong" class="form-control" type="text" readonly="true" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Giờ đóng cửa</label>
-                                            <input id="giodongcua" name="giodongcua" class="form-control" type="text" readonly="true" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label>Địa chỉ hoạt động</label>
-                                            <input type="text" id="diachihoatdong" name="diachihoatdong" class="form-control" placeholder="Click biểu tượng bên cạnh để chọn..." readonly="true" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Vĩ độ</label>
-                                            <input type="text" class="form-control" name="latitude" id="latitude" readonly="true" required/>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Kinh độ</label>
-                                            <input type="text" class="form-control" name="longitude" id="longitude" readonly="true" required/>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 <div class="tab-pane" id="description" style="padding:0 20px">
                                     <div class="row">
                                         <div class="col-sm-6">
@@ -1064,10 +1014,21 @@
                 function capcha_expired() {
                     allowSubmit = false;
                 }
+                function linhVucKD(){
+                    for(var i=0;i<$('.dichvu').length;i++){
+                        if($('.dichvu')[i].checked)
+                            return true;
+                    }
+                    return false;
+                }
                 $('#finish').click(function() {
                     allowEnter = true;
                 });
                 $('#myForm').on('submit', function(e) {
+                    if(!linhVucKD()) {
+                        e.preventDefault();
+                        alert('Bạn chưa chọn lĩnh vực kinh doanh!');
+                    }
                     if (allowSubmit && allowEnter) return true;
                     e.preventDefault();
                     alert('Bạn chưa xác minh Captcha!');
