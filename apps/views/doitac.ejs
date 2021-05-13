@@ -472,6 +472,11 @@
             width: 100%
         }
     </style>
+    <% if(data.messenger!=''){%>
+        <script>
+            alert('<%=messenger%>');
+        </script>
+    <%}%>
 </head>
 
 <body>
@@ -560,15 +565,9 @@
                                             <div class="form-group">
                                                 <label>Giới tính</label><br>
                                                 <select name="gioitinh" class="form-control">
-                                                    <option value="Nam"> Nam </option>
-                                                    <option value="Nữ"> Nữ </option>
+                                                    <option value="1"> Nam </option>
+                                                    <option value="0"> Nữ </option>
                                                 </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Quốc tịch</label>
-                                                <select id="quoctich" data-flags="true" name="quoctich" class="selectpicker countrypicker" data-live-search="true"></select>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -606,13 +605,10 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Loại hình kinh doanh</label><br>
-                                                <select name="loaitochuc" class="form-control">
-                                                    <option value="1"> Doanh nghiệp liên doanh </option>
-                                                    <option value="2"> Doanh nghiệp 100% vốn đầu tư nước ngoài</option>
-                                                    <option value="3">Công ty TNHH 1 thành viên</option>
-                                                    <option value="4">Doanh nghiệp tư nhân</option>
-                                                    <option value="5">Doanh nghiệp nhà nước</option>
-                                                    <option value="6">Cá nhân tự phát</option>
+                                                <select name="loaihinh" class="form-control">
+                                                    <option value="1">Trung Tâm Cứu Hộ</option>
+                                                    <option value="2">Tiệm Sửa Xe</option>
+                                                    <option value="3">Garage Ôtô</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -630,31 +626,28 @@
                                                 <label>Lĩnh vực kinh doanh</label>
                                                 <div id="loaidichvu" class="ml-3">
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" name="loaidichvu[]" value="Cứu hộ xe máy" class="dichvu" checked>Cứu hộ xe máy</label>
+                                                        <label><input type="checkbox" name="loaidichvu[]" value="1" class="dichvu">Cứu hộ xe máy</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" name="loaidichvu[]" value="Cứu hộ Ôtô" class="dichvu">Cứu hộ ôtô</label>
+                                                        <label><input type="checkbox" name="loaidichvu[]" value="2" class="dichvu">Cứu hộ ôtô</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" name="loaidichvu[]" value="Cứu hộ xe điện" class="dichvu">Cứu hộ xe điện</label>
+                                                        <label><input type="checkbox" name="loaidichvu[]" value="3" class="dichvu">Cứu hộ xe điện</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" name="loaidichvu[]" value="Sửa chữa xe máy" class="dichvu">Sửa chữa xe máy</label>
+                                                        <label><input type="checkbox" name="loaidichvu[]" value="10" class="dichvu">Sửa chữa xe máy</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" name="loaidichvu[]" value="Sửa chữa xe điện" class="dichvu">Sửa chữa xe điện</label>
+                                                        <label><input type="checkbox" name="loaidichvu[]" value="5" class="dichvu">Sửa chữa xe điện</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" name="loaidichvu[]" value="Sửa chữa xe ôtô" class="dichvu">Sửa chữa xe ôtô</label>
+                                                        <label><input type="checkbox" name="loaidichvu[]" value="6" class="dichvu">Sửa chữa ôtô</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" name="loaidichvu[]" value="Thợ sửa khóa xe" class="dichvu">Thợ sửa khóa xe</label>
+                                                        <label><input type="checkbox" name="loaidichvu[]" value="7" class="dichvu">Thợ sửa khóa xe</label>
                                                     </div>
                                                     <div class="checkbox">
-                                                        <label><input type="checkbox" name="loaidichvu[]" value="Giao xăng hộ" class="dichvu">Giao xăng hộ</label>
-                                                    </div>
-                                                    <div class="checkbox">
-                                                        <label><input type="checkbox" name="loaidichvu[]" value="Sửa xe tại nhà" class="dichvu">Sửa xe tại nhà</label>
+                                                        <label><input type="checkbox" name="loaidichvu[]" value="4" class="dichvu">Giao xăng hộ</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -691,7 +684,7 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Nhập lại mật khẩu:</label>
-                                                <input type="password" class="form-control" name="again-password" id="again-password" placeholder="Nhập lại mật khẩu của bạn..." required>
+                                                <input type="password" class="form-control" name="againPassword" id="again-password" placeholder="Nhập lại mật khẩu của bạn..." required>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
